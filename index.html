@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="INNER PEACE — tinh dầu, hương thơm và các trải nghiệm wellness theo tinh thần lifestyle, tối giản, thiên nhiên và healing.">
+  <title>INNER PEACE — Tinh dầu & Healing Experiences</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@400;500;600&display=swap');
+    :root{--forest:#173f31;--green:#6f8f78;--sage:#dce5d8;--ivory:#f6f3eb;--cream:#fbfaf6;--ink:#26332d;--gold:#a98a62}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+    nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(251,250,246,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(23,63,49,.08)}
+    .navin{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Cormorant Garamond",serif;font-size:28px;color:var(--forest);letter-spacing:.08em}
+    .links{display:flex;gap:28px;font-size:13px}.links a:hover{color:var(--gold)}
+    .hero{min-height:94vh;padding:120px 0 70px;background:linear-gradient(120deg,var(--ivory),#edf2ea 55%,#dfe9df);display:flex;align-items:center}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:11px;color:var(--gold);font-weight:600}
+    h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;color:var(--forest);line-height:1.05}
+    h1{font-size:clamp(58px,8vw,105px);margin:18px 0}.hero p{font-size:18px;max-width:570px;color:#52635a}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:13px 22px;border-radius:999px;font-size:13px;font-weight:600;border:1px solid var(--forest)}
+    .btn.primary{background:var(--forest);color:white}.btn.light{background:transparent;color:var(--forest)}
+    .hero-art{min-height:500px;border-radius:220px 220px 20px 20px;background:linear-gradient(145deg,rgba(23,63,49,.13),rgba(255,255,255,.62)),radial-gradient(circle at 65% 35%,#d7e5d4,transparent 38%);position:relative;overflow:hidden}
+    .hero-art:before,.hero-art:after{content:"";position:absolute;border:1px solid rgba(23,63,49,.16);border-radius:50%}.hero-art:before{width:360px;height:360px;right:-100px;top:60px}.hero-art:after{width:240px;height:240px;left:-100px;bottom:50px}
+    .leaf{position:absolute;font-size:100px;color:rgba(23,63,49,.16);transform:rotate(-22deg);left:22%;top:28%}
+    section{padding:105px 0}.section-head{max-width:720px;margin-bottom:46px}.section-head h2{font-size:clamp(42px,5vw,64px);margin:12px 0}.section-head p{color:#617168}
+    .story{background:var(--forest);color:#f5f2e9}.story h2,.story .eyebrow{color:#e8dfce}.story p{color:#d4ded7;max-width:760px;font-size:18px}
+    .services{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:#d9ded7}.service{background:var(--cream);padding:28px;min-height:290px}.num{color:var(--gold);font-size:12px;letter-spacing:.16em}.service h3{font-size:27px;margin:12px 0}.service p,.service li{font-size:13px;color:#617168}.service ul{padding-left:18px}
+    .products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:white;border:1px solid #e7e6de;padding:26px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between}.card .mini{font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:var(--gold)}.card h3{font-size:30px;margin:10px 0}.card p{font-size:13px;color:#68776f}
+    .b2b{background:#e9efe7}.b2b-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.b2b-card{background:rgba(255,255,255,.72);padding:38px;border:1px solid rgba(23,63,49,.09)}.b2b-card h3{font-size:38px;margin:0 0 12px}
+    .quote{font-family:"Cormorant Garamond",serif;font-size:42px;color:var(--forest);max-width:850px;line-height:1.15}
+    footer{background:#102e24;color:#dce5dc;padding:55px 0}.foot{display:flex;justify-content:space-between;gap:30px;align-items:end}.foot h2{color:#f3efe5;font-size:42px;margin:0 0 8px}.foot p{font-size:13px}.social{display:flex;gap:10px;flex-wrap:wrap}.social a{border:1px solid rgba(255,255,255,.25);padding:10px 16px;border-radius:999px;font-size:12px}
+    @media(max-width:900px){.hero-grid,.b2b-grid{grid-template-columns:1fr}.hero-art{min-height:390px}.services{grid-template-columns:1fr 1fr}.products{grid-template-columns:1fr 1fr}.links{display:none}}
+    @media(max-width:560px){section{padding:75px 0}.services,.products{grid-template-columns:1fr}.hero{padding-top:105px}.hero-art{min-height:300px}.foot{display:block}.quote{font-size:34px}}
+  </style>
+</head>
+<body>
+<nav><div class="wrap navin">
+  <a class="brand" href="#top">INNER PEACE</a>
+  <div class="links"><a href="#story">Về INNER PEACE</a><a href="#services">Sản phẩm & Dịch vụ</a><a href="#b2b">B2B</a><a href="#contact">Liên hệ</a></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap hero-grid">
+  <div>
+    <div class="eyebrow">Essential oils · Wellness · Healing</div>
+    <h1>Find your<br><i>inner peace.</i></h1>
+    <p>Một không gian để khám phá hương thơm, những nghi thức wellness và trải nghiệm healing theo tinh thần tối giản, tự nhiên và giàu cảm xúc.</p>
+    <div class="actions"><a class="btn primary" href="#services">Khám phá sản phẩm</a><a class="btn light" href="#contact">Tư vấn cho doanh nghiệp</a></div>
+  </div>
+  <div class="hero-art"><div class="leaf">♧</div></div>
+</div></header>
+
+<section id="story"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Why Inner Peace?</div><h2>More than essential oils.<br>We design healing experiences.</h2></div>
+  <div class="story"><p>INNER PEACE hướng đến việc đưa hương thơm trở thành một phần của lifestyle và wellness — từ những sản phẩm dùng mỗi ngày đến các trải nghiệm được thiết kế cho không gian, thương hiệu và cộng đồng.</p></div>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">Signature offerings</div><h2>Sản phẩm & Dịch vụ</h2><p>Khám phá hệ sinh thái INNER PEACE cho nhu cầu cá nhân và các không gian wellness.</p></div>
+  <div class="services">
+    <article class="service"><div class="num">01 · BÁN LẺ</div><h3>Signature Scent Collection</h3><p>Thiết kế trải nghiệm bằng hương thơm thông qua bộ sưu tập:</p><ul><li>Tinh dầu Luân Xa</li><li>Tinh dầu Lan Manifest</li><li>Tinh dầu Treo Not Drunken</li><li>Tinh dầu Phối hương</li></ul></article>
+    <article class="service"><div class="num">02 · TƯ VẤN</div><h3>Aroma Ritual</h3><p>Tư vấn liệu pháp hương thơm theo mục đích sử dụng:</p><ul><li>Spa & Hotel</li><li>Meditation</li><li>Yoga</li><li>Spiritual Space</li><li>Home Wellness</li></ul></article>
+    <article class="service"><div class="num">03 · THIẾT KẾ MÙI HƯƠNG</div><h3>Wellness Concept</h3><p>Đồng hành xây dựng trải nghiệm Wellness cho doanh nghiệp:</p><ul><li>Signature Scent</li><li>Brand Scent</li><li>Custom Blend</li><li>Corporate Wellness</li></ul></article>
+    <article class="service"><div class="num">04 · WORKSHOP</div><h3>Aromatherapy Workshop</h3><p>Thiết kế và tổ chức workshop dựa trên:</p><ul><li>Emotional State</li><li>Chakra System</li><li>Aromatherapy</li><li>Healing Journey</li></ul></article>
+    <article class="service"><div class="num">05 · QUÀ TẶNG</div><h3>Corporate Gift</h3><p>Premium Gift Set dành cho:</p><ul><li>Resort, Spa, Retreat</li><li>Doanh nghiệp</li><li>Lễ, Tết, Sinh nhật, Ngày kỷ niệm</li></ul></article>
+  </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">For your everyday ritual</div><h2>Signature Scent Collection</h2></div>
+  <div class="products">
+    <article class="card"><div><div class="mini">Essential Oil</div><h3>Tinh dầu Luân Xa</h3><p>Khám phá bộ sưu tập tinh dầu Luân Xa của INNER PEACE.</p></div><a class="btn light" href="https://shopee.vn/tinhdauluanxa" target="_blank">Xem trên Shopee ↗</a></article>
+    <article class="card"><div><div class="mini">Essential Oil</div><h3>Tinh dầu Lan Manifest</h3><p>Một lựa chọn trong Signature Scent Collection.</p></div><a class="btn light" href="https://shopee.vn/tinhdauluanxa" target="_blank">Xem trên Shopee ↗</a></article>
+    <article class="card"><div><div class="mini">Aroma</div><h3>Tinh dầu Treo Not Drunken</h3><p>Sản phẩm hương thơm tiện dụng cho lifestyle.</p></div><a class="btn light" href="https://shopee.vn/tinhdauluanxa" target="_blank">Xem trên Shopee ↗</a></article>
+    <article class="card"><div><div class="mini">Blend</div><h3>Tinh dầu Phối hương</h3><p>Khám phá những lựa chọn phối hương của INNER PEACE.</p></div><a class="btn light" href="https://shopee.vn/tinhdauluanxa" target="_blank">Xem trên Shopee ↗</a></article>
+  </div>
+</div></section>
+
+<section class="b2b" id="b2b"><div class="wrap">
+  <div class="section-head"><div class="eyebrow">For spaces & brands</div><h2>Wellness experiences for B2B</h2><p>Từ mùi hương đến workshop và quà tặng, INNER PEACE có các hướng dịch vụ dành cho không gian và doanh nghiệp.</p></div>
+  <div class="b2b-grid">
+    <div class="b2b-card"><h3>Aroma Ritual</h3><p>Spa & Hotel · Meditation · Yoga · Spiritual Space · Home Wellness</p><a class="btn primary" href="#contact">Liên hệ tư vấn</a></div>
+    <div class="b2b-card"><h3>Wellness Concept</h3><p>Signature Scent · Brand Scent · Custom Blend · Corporate Wellness</p><a class="btn primary" href="#contact">Liên hệ tư vấn</a></div>
+    <div class="b2b-card"><h3>Workshop</h3><p>Emotional State · Chakra System · Aromatherapy · Healing Journey</p><a class="btn light" href="#contact">Trao đổi workshop</a></div>
+    <div class="b2b-card"><h3>Corporate Gift</h3><p>Resort · Spa · Retreat · Doanh nghiệp · Lễ/Tết · Sinh nhật · Kỷ niệm</p><a class="btn light" href="#contact">Trao đổi quà tặng</a></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="quote">“A scent can become a small ritual — a moment to pause, breathe, and return to yourself.”</div>
+</div></section>
+
+<footer id="contact"><div class="wrap foot">
+  <div><div class="eyebrow" style="color:#c9b997">INNER PEACE</div><h2>Return to your inner peace.</h2><p>Kết nối với INNER PEACE để khám phá sản phẩm hoặc trao đổi nhu cầu B2B.</p></div>
+  <div class="social"><a href="https://www.facebook.com/tinhdauinnerpeace" target="_blank">Facebook ↗</a><a href="https://shopee.vn/tinhdauluanxa" target="_blank">Shopee ↗</a></div>
+</div></footer>
+</body>
+</html>
